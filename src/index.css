@@ -1,13 +1,65 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+.listItems {
+  background-color: #fff;
+  color: #46529d;
+}
+.listItems p {
+  margin: 0;
+  padding: 10px 0;
+}
+.listItems span {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+  border: 0.3px solid #ccc;
+}
+.listItems span.title {
+  background-color: #2ebaee;
+  color: #fff;
+}
+.listItems span.name,
+form input[type="text"] {
+  width: 50%;
+}
+.listItems span.age,
+form input[type="number"] {
+  width: 30%;
+}
+.listItems span.action,
+form input[type="submit"] {
+  width: 20%;
+}
+.listItems span.icon {
+  color: #f00;
+  cursor: pointer;
+}
+form input {
+  padding: 10px;
+  background-color: #ebebeb;
+  border: 0.3px solid #ccc;
+}
+form input:focus {
+  outline: none !important;
+  border-color: #719ece;
+  box-shadow: 0 0 10px #719ece;
+}
+
+form input[type="submit"] {
+  background-color: #2ebaee;
+  color: #fff;
+  border: 0.3px solid #2ebaee;
+  cursor: pointer;
 }
